@@ -1,0 +1,317 @@
+@import "./reset.css";
+.wrapper{
+    background-image: url(../img/BACKGROUND-20.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+[class*="__container"] {
+    max-width: 425px;
+    background-color: rgb(219, 219, 219);
+    margin: auto auto;
+}
+
+
+.form__container {
+    position: relative;
+    box-shadow: 0px 8px 2px -3px rgba(92, 92, 92, 0.4);
+}
+
+.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+}
+
+
+.form__title {
+    margin: 60px 0px 50px 0;
+    text-align: center;
+    
+}
+
+.title {
+    color: #000;
+    font-size: 40px;
+}
+.form__text {
+    position: relative;
+    color: #fff;
+}
+.form__text a {
+    color: #fff;
+}
+.form__text span {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.registration__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 35px;
+}
+.label__bloc {
+    display: inline-flex;
+    
+}
+
+
+
+
+
+.label__bloc input {
+    padding-left: 20px;
+    background-color: #fff;
+    width: 300px;
+    font-size: 20px;
+} 
+
+input::placeholder {
+    color: rgb(207, 204, 204);
+}
+
+.user__name__img {
+    background-color: rgb(240, 99, 47);
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.user__name__img:hover {
+    background-color: rgb(196, 76, 33);
+}
+
+.user__name__icone {
+    width: 30px;
+    height: 30px;
+}
+
+.label__bloc__password {
+    position: relative;
+}
+.btn__pass {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 15px;
+    top: 12px;
+}
+
+
+.btn__pass::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 35px;
+    top:-8px;
+    right: 50%;
+    background-color: rgb(207, 204, 204);
+    transform: rotate(45deg);
+    transition: .3s all ease;
+    opacity: 1;
+}
+   
+.btn__pass.active::after {
+    opacity: 0;
+}
+
+
+.bottom__wraper {
+    margin:30px auto 57px auto;
+    width: 345px;
+    justify-content: space-between;
+    display: flex;
+}
+.btn__sing {
+    background-color: rgb(240, 99, 47);
+    padding: 10px 35px;
+}
+.btn__sing a {
+    color: #fff;
+    font-size: 25px;
+}
+.btn__sing:hover {
+    background-color: rgb(196, 76, 33);
+}
+
+.remember {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: rgb(70, 69, 69);
+    font-size: 15px;
+}
+.remember a {
+    color: rgb(70, 69, 69);
+}
+
+.remember a:hover {
+    color: rgb(222, 149, 123);
+}
+
+
+.rem__chec{
+    position: relative;
+    padding-left: 13px;
+}
+.rem__chec::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: -1px;
+    left: -25px;
+    background-color: rgb(255, 255, 255);
+
+    transition: 0.3s all ease;
+}
+
+.rem__chec:hover::after {
+    background-color: rgb(209, 206, 206);
+    border: 1px solid #000;
+}
+
+.rem__chec::before {
+    position: absolute;
+    z-index: 10;
+    content: '';
+    width: 6px;
+    height: 12px;
+    top: 0;
+    left: -17px;
+    border:solid rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+
+    display: none;
+
+   
+}
+
+.rem__chec span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.rem__chec.active__tick::after{
+    background-color: rgb(0, 0, 0);
+}
+.rem__chec.active__tick::before {
+    display: block;
+}
+
+
+
+@media (max-width: 450px) {
+    [class*="__container"] {
+        max-width: 300px;
+    }
+    .form__title {
+        margin:35px 0px 30px 0;
+    }
+    
+    .title {
+        font-size: 30px;
+    }
+    .form__text {
+        font-size: 13px;
+    }
+    
+    .registration__form {
+        gap: 5px;
+        padding: 0 10px;
+    }
+    
+    .label__bloc input {
+        padding-left: 5px;
+        width: 250px;
+        font-size: 15px;
+    } 
+    
+    .user__name__img {
+        width: 35px;
+        height: 35px;
+        background-color: rgb(240, 99, 47);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .user__name__icone {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .btn__pass {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 15px;
+        top: 25%;
+    }
+    
+    
+    .btn__pass::after {
+        width: 2px;
+        height: 30px;
+        top:-6px;
+        right: 50%;
+    }
+       
+    .bottom__wraper {
+        margin: 30px auto 47px auto;
+        width: 280px;
+    }
+    .btn__sing {
+        padding: 5px 20px;
+    }
+    .btn__sing a {
+        font-size: 20px;
+    }
+    
+    .remember {
+        font-size: 12px;
+    }
+    
+    .remember a:hover {
+        color: rgb(222, 149, 123);
+    }
+    
+    
+    .rem__chec{
+        padding-left: 10px;
+    }
+    .rem__chec::after {
+        width: 15px;
+        height: 15px;
+        top: -1px;
+        left: -19px;
+    }
+}
+
+
+
+
+
+
+
