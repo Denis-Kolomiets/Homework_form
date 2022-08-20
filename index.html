@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Form registration</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="form__container">
+        <form class="form__container">
             <button class="close">
                 <img src="./img/close.svg" alt="">
             </button>
@@ -28,12 +28,10 @@
 
                     <label class="label__bloc label__bloc__password" >
                         <div class="user__name__img">
-                            <img src="./img/password.svg" class="user__name__icone" alt="password">
+                            <img src="./img/password.svg"  class="user__name__icone" alt="password">
                         </div>
                         <input type="password" placeholder="Password" class="pass__input">
-                        <div class="btn__pass">
-                            <img src="./img/eys/open_eys.svg" alt="">
-                        </div>
+                        <div class="btn__pass"><img src="./img/eys/open_eys.svg" alt=""></div>
                     </label>
             </div>
             <div class="bottom__wraper">
@@ -41,14 +39,14 @@
                     <a href="#">Sing In</a>
                 </button>
                 <div class="remember">
-                    <label for="">
+                    <label>
                         <input type="checkbox">
                         <div class="rem__chec"><span>Remember me</span></div>
                     </label>
                     <a href="#">Forgot Password?</a>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <script src="./js/script.js"></script>
