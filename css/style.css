@@ -1,4 +1,6 @@
 @import "./reset.css";
+
+
 .wrapper{
     background-image: url(../img/BACKGROUND-20.jpg);
     background-repeat: no-repeat;
@@ -20,6 +22,8 @@
     
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .close {
@@ -31,19 +35,22 @@
 }
 
 
-.form__title {
+/* .form__title {
     margin: 60px 0px 50px 0;
     text-align: center;
     
-}
+} */
 
 .title {
     color: #000;
     font-size: 40px;
+    margin-top: 60px;
 }
 .form__text {
     position: relative;
     color: #fff;
+    margin-bottom: 50px;
+
 }
 .form__text a {
     color: #fff;
@@ -55,17 +62,20 @@
 
 
 
-.registration__form {
+/* .registration__form {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 15px;
     padding: 0 35px;
-}
+} */
 .label__bloc {
     display: inline-flex;
-    
+    margin: 0 35px 0px 35px;
+    margin-bottom: 15px;
 }
+
+
 
 
 
@@ -132,7 +142,7 @@ input::placeholder {
 
 
 .bottom__wraper {
-    margin:30px auto 57px auto;
+    margin:15px auto 57px auto;
     width: 345px;
     justify-content: space-between;
     display: flex;
